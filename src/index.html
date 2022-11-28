@@ -46,5 +46,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const productList = document.getElementsByClassName('card product');
+      const product = productList[0];
+      const priceList = document.getElementsByClassName('subtitle is-6 price');
+      const priceElement = priceList[0];
+      const price = priceElement.getInnerHTML();
+      product.setAttribute('data-price', price);
+    
+    </script>
   </body>
 </html>
